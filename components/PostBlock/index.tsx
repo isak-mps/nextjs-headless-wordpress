@@ -6,7 +6,7 @@ import defaultImage from "@/assets/images/default.jpg";
 export const PostBlock = ({ post }: { post: any }) => {
   return (
     <div className="post-block p-2 rounded-md">
-      <Link href={`/posts/${post.slug}`}>
+      <Link href={`/blog/${post.slug}`}>
         <div className="relative h-80 transition-all duration-200 ease-linear hover:-translate-y-[3px]">
           <Image
             src={post.featuredImage.node.sourceUrl ?? defaultImage}
